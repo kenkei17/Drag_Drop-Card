@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.container{
+    min-height: 500px;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+}
+#destination1 {
+  color: white;
+  background: rgb(255, 115, 115);
+  padding: 4px 8px;
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+}
+#destination2 {
+  color: black;
+  background: rgb(131, 255, 131);
+  padding: 4px 8px;
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  padding:10px;
+  height: 150px;
+  width:150px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  position: relative;
+}
+button {
+  height: 20px;
+}
+.contaner-2{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 100vh;
+}
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  
+}
+</style>
+<body>
+
+</div>
+  
+
+<div class="container">
+    <div id="destination1">
+      
+    </div>
+      
+    <div id="destination2" >
+        
+    </div>
+</div>
+<div class="contaner-2">
+
+ 
+  
+  <div class="card">
+    <img src="https://pub-static.fotor.com/assets/projects/pages/d5bdd0513a0740a8a38752dbc32586d0/fotor-03d1a91a0cec4542927f53c87e0599f6.jpg" alt="">
+  <h3>Risa</h3>
+  <button onclick="moveTo1(this.parentNode,name)">To red</button>
+  <button onclick="moveTo2(this.parentNode)">To green</button>
+  </div>
+  <div class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMF7rNYRqdBhKmsTiW0pes2TrBJnzv7zqbjMp9W9J4cX4XK8jSeUmHBgHrgIt9AmANjxk&usqp=CAU" alt="">
+  <h3>Piccolo</h3>
+  <button onclick="moveTo1(this.parentNode, name)">To red</button>
+  <button onclick="moveTo2(this.parentNode)">To green</button>
+  </div>
+  <div class="card">
+  <img src="https://support.content.office.net/en-us/media/21885801-eff3-41d3-a8bf-413a17aa78a3.png" alt="">
+  <h3>Bob</h3>
+  <button onclick="moveTo1(this.parentElement,name)">To red</button>
+  <button onclick="moveTo2(this.parentElement,name)">To green</button>
+  </div>
+  <div class="card">
+    <img src="https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/636ef2952b0396674cbc0c2e_8-tips-for-upwork-profile-picture.jpg" alt="">
+  <h3>Dende</h3>
+  <button onclick="moveTo1(this.parentElement,name)">To red</button>
+  <button onclick="moveTo2(this.parentElement,name)">To green</button>
+  </div>
+
+  <div class="card">
+    <h3>Risa1</h3>
+
+    <button onclick="moveTo1(this.parentElement)">To red</button>
+    <button onclick="moveTo2(this.parentElement)">To green</button>
+    
+    </div>
+    <div class="card">
+    <h3>Piccolo2</h3>
+    <button onclick="moveTo1(this.parentElement)">To red</button>
+    <button onclick="moveTo2(this.parentElement)">To green</button>
+    
+    </div>
+    <div class="card">
+    <h3>Bob3</h3>
+    <button onclick="moveTo1(this.parentElement)">To red</button>
+    <button onclick="moveTo2(this.parentElement)">To green</button>
+    </div>
+    <div class="card">
+    <h3>Dende4</h3>
+    <button onclick="moveTo1(this.parentElement)">To red</button>
+    <button onclick="moveTo2(this.parentElement)">To green</button>
+    
+    </div>
+</div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
